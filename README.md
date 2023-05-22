@@ -20,5 +20,5 @@ There is total 17 pages in this website as;
 •	1 Account Login Page  
 
 ## Layouts
-![alt text](https://github.com/sibgha-saleem/Foodelicious-Website/blob/main/image.png | width=100)  
+<img src="https://github.com/sibgha-saleem/Foodelicious-Website/blob/main/image.png" width="100" height="100">
 ![alt text](https://github.com/sibgha-saleem/Foodelicious-Website/blob/main/image2.png)
