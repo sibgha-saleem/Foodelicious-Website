@@ -1,0 +1,523 @@
+/* ===== Layout section ===== */
+
+body {
+  background-color: #e8e8e8;
+  margin: 0px;
+  font-family: "Patrick Hand", cursive;
+  font-size: 16px;
+}
+
+#header1 {
+  background-color: #000000;
+  margin: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+#header2 {
+  background-color: #ffffff;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+#navbar ul {
+  padding: 5px;
+  list-style-type: none;
+  text-align: center;
+  background-color: #d01f4e;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+#navbar ul li {
+  display: inline;
+  transition-duration: 0.5s;
+  position: relative;
+}
+
+#navbar ul li a {
+  text-decoration: none;
+  font-family: Arial;
+  padding: 0.2em 1em;
+  color: #ffffff;
+  background-color: #d01f4e;
+}
+
+#navbar ul li a:hover {
+  color: #d01f4e;
+  background-color: #ffffff;
+}
+li:hover {
+  color: #d01f4e;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+li:focus-within a {
+  outline: none;
+}
+ul li ul {
+  background: #d01f4e;
+  visibility: hidden;
+  opacity: 0;
+  min-width: 15rem;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin: 5px;
+  left: 0;
+  display: block;
+}
+
+ul li:hover > ul,
+ul li:focus-within > ul,
+ul li ul:hover,
+ul li ul:focus {
+  visibility: visible;
+  z-index: 100;
+  opacity: 1;
+  display: block;
+}
+
+ul li ul li {
+  clear: both;
+  max-width: 100%;
+  margin: 5px;
+}
+.imagemain {
+  max-width: 100%;
+  margin: 10px;
+  border-radius: 5px;
+  padding: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+#footer {
+  background-color: #ffffff;
+  margin: 15px;
+  border-radius: 5px;
+  clear: both;
+  color: #d01f4e;
+  text-align: center;
+  padding: 15px;
+  font-size: 90%;
+}
+
+#footer ul {
+  padding: 5px;
+  list-style-type: none;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+#footer ul li {
+  display: block;
+}
+
+#footer ul li a {
+  text-decoration: none;
+  font-family: Arial;
+  padding: 0.2em 1em;
+  margin: 5px;
+  color: #d01f4e;
+  background-color: #ffffff;
+}
+
+#footer ul li a:hover {
+  color: #ffffff;
+  background-color: #d01f4e;
+}
+/* ===== headings section ===== */
+
+#head1_h2 {
+  font-size: 80%;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  font-family: Arial;
+  padding: 0.5em;
+}
+#home_h1,
+#home_h3 {
+  font-size: 200%;
+  background-color: #d01f4e;
+  color: #ffffff;
+  font-weight: 20px;
+  padding: 10px;
+  margin: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  font-family: Lucida Handwriting, Lucida Console, Arial;
+  text-align: center;
+}
+h4 {
+  font-size: 120%;
+  color: #d01f4e;
+  text-align: center;
+  margin: none;
+  font-family: Lucida Handwriting, Lucida Console, Arial;
+}
+h5 {
+  text-align: left;
+  font-family: Lucida Console;
+  color: #d01f4e;
+  font-weight: 20px;
+  margin: 0;
+  margin: 0px;
+  padding: 0px;
+  padding: 5px;
+}
+h6 {
+  text-align: left;
+  font-family: Lucida Console;
+  color: #000000;
+  font-weight: 20px;
+  font-size: 120%;
+  margin: 0px;
+  padding: 0px;
+  padding: 5px;
+}
+
+#foodlogo {
+  max-width: 30%;
+  margin-right: 320px;
+}
+#foodlogo_uc {
+  max-width: 30%;
+  margin-left: 35%;
+  margin-top: 10%;
+}
+#uc {
+  max-width: 30%;
+  margin-left: 36%;
+}
+.search_home {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.overlay_s {
+  position: absolute;
+  background: rgb(171, 56, 87); /* Black see-through */
+  color: #ffffff;
+  bottom: 0;
+  width: fit-content;
+  transition: 0.5s ease;
+  opacity: 0;
+  font-size: 10px;
+  text-align: center;
+  margin-left: -200px;
+  margin-bottom: -25px;
+  padding: 5px;
+  height: 20px;
+}
+#account:hover .overlay_a {
+  opacity: 1;
+}
+
+.overlay_a {
+  position: absolute;
+  background: rgb(171, 56, 87); /* Black see-through */
+  color: #ffffff;
+  bottom: 0;
+  width: fit-content;
+  transition: 0.5s ease;
+  opacity: 0;
+  font-size: 10px;
+  text-align: center;
+  margin-left: -200px;
+  margin-bottom: -25px;
+  padding: 5px;
+  height: 20px;
+}
+.search_home:hover .overlay_s {
+  opacity: 1;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #d01f4e;
+  border-right: none;
+  padding: 15px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9dbfaf;
+}
+
+.searchTerm:focus {
+  color: #d01f4e;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #d01f4e;
+  background: #d01f4e;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap_search {
+  margin-top: 30px;
+  margin-right: 30px;
+  float: right;
+  width: 30%;
+}
+
+#acc {
+  float: right;
+  margin-right: 15px;
+  margin-top: 31px;
+}
+
+.chicken {
+  width: 20%;
+}
+.pasta {
+  width: 20%;
+}
+.fish {
+  width: 20%;
+}
+.desserts {
+  width: 20%;
+}
+.wraps {
+  width: 20%;
+  margin-right: 5%;
+}
+.keto {
+  width: 20%;
+}
+.chicken:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+.pasta:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+.fish:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+.desserts:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+.wraps:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+.keto:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+.recipesrange {
+  text-align: center;
+}
+
+.foodlogo2 {
+  max-width: 20%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#connect {
+  float: right;
+  clear: right;
+  width: 40%;
+}
+
+#information {
+  width: 40%;
+  clear: left;
+}
+
+.facebook,
+.twitter,
+.insta {
+  cursor: pointer;
+}
+
+#featuredrecipes::after {
+  content: " ";
+  clear: both;
+  display: inline;
+  overflow: scroll;
+}
+
+.r1 {
+  margin-left: 10%;
+}
+.r1,
+.r2,
+.r3,
+.r4 {
+  float: left;
+  width: 20%;
+  padding: 5px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+#recipe {
+  background-color: #ffffff;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  width: 60%;
+}
+
+#r_ul {
+  list-style-type: none;
+  margin: 10px;
+  text-align: center;
+}
+#r_ul2 {
+  margin: 10px;
+  margin-left: 10%;
+}
+#r_li {
+  font-family: "Patrick Hand", cursive;
+  margin: 10px;
+  padding: 10px;
+  font-size: 20px;
+}
+#comment {
+  clear: both;
+  background-color: #ffffff;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  width: 60%;
+}
+#c_p {
+  position: absolute;
+  font-family: "Patrick Hand", cursive;
+  margin: 10px;
+  margin-left: 10%;
+  padding: 10px;
+  font-size: 15px;
+}
+
+#c2 {
+  font-family: "Patrick Hand", cursive;
+  margin-left: 30%;
+  font-size: 15px;
+}
+
+.h1_r {
+  font-family: "Patrick Hand", cursive;
+  font-weight: bold;
+  color: #d01f4e;
+  font-size: 30px;
+  margin-left: 10%;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgb(171, 56, 87); /* Black see-through */
+  color: #ffffff;
+  width: 95%;
+  transition: 0.5s ease;
+  margin-bottom: 35%;
+  opacity: 0;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.r1:hover .overlay,
+.r2:hover .overlay,
+.r3:hover .overlay,
+.r4:hover .overlay {
+  opacity: 1;
+}
+
+.recipe_img {
+  margin: 0;
+}
+.r1:hover,
+.r2:hover,
+.r3:hover,
+.r4:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+#recipe_container {
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 70px;
+  font-weight: bold;
+  text-shadow: 1px 1px #000000;
+}
+
+.searchTerm_recipe {
+  width: 100%;
+  border: 3px solid #d01f4e;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9dbfaf;
+}
+
+.overlay_r {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgb(171, 56, 87); /* Black see-through */
+  color: #ffffff;
+  width: 85%;
+  margin-bottom: 20%;
+  transition: 0.5s ease;
+  opacity: 0;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.r1:hover .overlay_r,
+.r2:hover .overlay_r,
+.r3:hover .overlay_r,
+.r4:hover .overlay_r {
+  opacity: 1;
+}
+
+#order {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  font-family: "Patrick Hand", cursive;
+  font-size: 30px;
+  border-color: #d01f4e;
+}
